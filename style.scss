@@ -1,0 +1,86 @@
+$asideWidth: 28%;
+$asidePadding: 1%;
+$mainWidth: 68%;
+$mainPadding: 1%;
+$footerHeight: 60px;
+$headerHeight: 50px;
+$headerPadding: 20px;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: auto;
+  width: 100%;
+  background-color: #dddddd;
+}
+* html #wrapper {
+  height: 100%;
+}
+
+footer {
+  position: relative;
+  height: 50px;
+  padding-top:20px;
+  margin-top: -70px;
+  background-color: #ff9999;
+  text-align:center;
+}
+
+header {
+  height: 50px;
+  padding: 20px;
+  background-color: #eeffee;
+}
+
+main {
+  background-color: #ccddcc;
+ /*ight: $asideWidth+$asidePadding*2;*/
+  float: left;
+  border: 0px solid red;
+  width: $mainWidth;
+  padding: 10px $mainPadding 100px;
+}
+
+input {
+  width: 100px;
+  transition: width 0.5s;
+}
+
+input:hover, input:focus {
+  width: 200px;
+  transition: width 0.5s;
+}
+
+
+aside {
+  width: $asideWidth;
+  background-color: #eeccff;
+  transition: transform 5s;
+  float: left;
+  border: 0px solid green;
+  padding: 10px $asidePadding 100px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 40px 40px #888888 inset;
+}
+
+aside:hover {
+  background-color: #ff9999;
+  transform: rotate(90deg) translate(100px, 100px);
+  transition: transform 1s;
+}
+/*oter {
+  height: $footerHeight;
+  background-color: #cfccfc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border:1px solid blue;
+}*/
